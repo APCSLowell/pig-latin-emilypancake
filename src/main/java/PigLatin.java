@@ -45,7 +45,7 @@ public class PigLatin {
         //postcondition: returns the pig latin equivalent of sWord
         // more code should go here
 	   
-	    if(findFirstVowel(sWord) == 1) {
+	    if(findFirstVowel(sWord) == 0) {
 		return sWord + "way";
 	    }
 	    for(int i = 0; i < sWord.length(); i++){
