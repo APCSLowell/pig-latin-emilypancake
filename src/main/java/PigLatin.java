@@ -46,16 +46,17 @@ public class PigLatin {
         // more code should go here
 	   
 	    if(findFirstVowel(sWord) == 1) {
-		    return sWord + "way";
+		return sWord + "way";
 	    }
 	    if(findFirstVowel(sWord) == -1) {
-		    return sWord + "ay";
-	    }
-	    else {
+		return sWord + "ay";
+	    } else {
 		return "ERROR!";
 	    }
 	    for(int i = 0; i < sWord.length(); i++){
-		    return sWord.substring(i) + sWord.substring(0, i) + "ay";
+		if(findFirstVowel(sWord) == i){
+			return sWord.substring(i) + sWord.substring(0, i) + "ay";
+		}
 		
 			    
 	    }
