@@ -44,7 +44,7 @@ public class PigLatin {
         //precondition: sWord is a valid String of length greater than 0
         //postcondition: returns the pig latin equivalent of sWord
         // more code should go here
-	    for(int i = 0; i < sWord.length; i++){
+	    for(int i = 0; i < sWord.length(); i++){
 		    return sWord.substring(i) + sWord.substring(0, i) + "ay";
 		
 			    
