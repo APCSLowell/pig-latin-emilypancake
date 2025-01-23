@@ -48,11 +48,6 @@ public class PigLatin {
 	    if(findFirstVowel(sWord) == 1) {
 		return sWord + "way";
 	    }
-	    if(findFirstVowel(sWord) == -1) {
-		return sWord + "ay";
-	    } else {
-		return "ERROR!";
-	    }
 	    for(int i = 0; i < sWord.length(); i++){
 		if(findFirstVowel(sWord) == i){
 			return sWord.substring(i) + sWord.substring(0, i) + "ay";
@@ -60,5 +55,11 @@ public class PigLatin {
 		
 			    
 	    }
+	    if(findFirstVowel(sWord) == -1) {
+		return sWord + "ay";
+	    } else {
+		return "ERROR!";
+	    }
+	    
     }
 }//end PigLatin class
